@@ -5,32 +5,101 @@
     <meta name="viewport" content="width=device-width">
     <title>Eric's Portfolio Site - HTML Wireframe</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">
+      <a href="#aboutMe">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#">Blog</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
 
     <main>
+
         <header role="banner">
-            <h1>Hero</h1>
+            <h1>Coder in Development</h1>
         </header>
-        
-        <section>
-            Section 1 - About Me
+
+        <section class="headline">
+            <h2>Hi! I'm Eric, an aspiring fullstack developer from Baltimore, MD.</h2>
         </section>
 
-        <section>
-                Section 2 - Projects
-        </section>
+        <a name="aboutMe">
+          <section class="aboutMe" id="aboutMe">
+            <h3>About Me</h3>
+            <hr>
+            <p>Hey, I'm Eric, and I'm currently studying web development through Bloc's Web Developer program.</p>
+            <p>I've always been excited about learning new things, and have been doing a lot of that in recent years.  Since training as a materials engineer in college, I've been spending my post-college days learning to crack the code of ancient Jewish texts in Jerusalem,  teaching science to high school drop-outs in Chicago, and estimating multi-million dollar construction projects in Baltimore.</p>
+            <p>My newest venture is coding, and with it, I've finally found a niche that I feel confident that I can stay put with for a while.  I love the new skills that are allowing me to be a contributor to the tech world that I am unavoidably engaged in on a daily basis.  It is extremely gratifying to be acquiring the skills to take ideas and then make them a reality - I'm slowly beginning to see that almost anything is possible.  Although frustrating at times, I love the continual process of slowly developing an app and constantly making improvements until I am satisfied with it, as this is how I like to approach all of life.</p>
+            <p>Aside from coding, I love to spend my time watching The Office with my amazing wife, jumping in puddles with my son, and biking. meditating, and doing yoga when I can find a spare moment.</p>
+          </section>
+        </a>
 
-        <section>
-                Section 3 - Blog
-        </section>
+        <a name="projects">
+          <section class="projects" id="projects">
+            <h3>Projects</h3>
+            <hr>
+            <div class="projectPhotoAndInfo"> 
+              <div class="projectPhoto">
+                <a href="https://quiz-app--ericfeldman.repl.co/"><img 
+                src="quizApp2.png" alt="Quiz App Screenshot"></img></a>
+              </div>
+              <div class="projectInfo">
+                <p class="projectTitle">Quiz App</p>
+                <p class="projectLanguages">HTML CSS Javascript JQuery</p>
+                <p class="projectDescription">10-Question Quiz App</p>
+                <p class="projectDate">June 2019</p>
+                <!-- <a href="https://github.com/ericfeldman1/Quiz-App" class="projectGithubLink">Github Repo</a> -->
+                <a href="https://github.com/ericfeldman1/Quiz-App" target="blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Github Logo"></a>
+                
+              </div>    
+            </div>
+          </section>
+        </a>
 
-        <section>
-                Section 4 - Contact
-        </section>
+        <!-- <section class="blog">
+          <h3>Blog</h3>
+        </section> -->
+
+        <a name="contact">
+          <section class="contact" id="contact">
+            <h3>Feel free to reach out!</h3>
+            <hr>
+            <form class="contactForm" action="#" method="post">
+            <fieldset name="contactForm">
+              <div>
+                <label for="name">Name:</label>
+                <input id="name" name="user_name" type="text" placeholder="Gerry Bertier" required>
+              </div>
+              <div>
+                <label for="email">E-mail:</label>
+                <input id="email" name="user_email" type="email" placeholder="GBertier@TCWilliams.edu" >
+              </div>    
+              <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="user_message" placeholder="Strong Side!"></textarea>
+              </div>  
+              <div class="submitMsgButton">
+                <button type="submit">Send your message</button>
+              </div>  
+            </fieldset>  
+            </form>
+            <p>(You can also <a href="mailto:ericfeldman2@gmail.com">email me</a> the old fashioned way if you'd like)</p>  
+          </section>
+        </a>
     </main>
     
-    <footer role="content-info">Footer</footer>    
+    <footer role="content-info">
+      <a href="https://github.com/ericfeldman1" target="blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Github Logo"></a>  
+      <a href="https://www.linkedin.com/in/eric-feldman-172b5948/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/800px-LinkedIn_Logo.svg.png" alt="LinkedIn Logo"></a> 
+      <a href="mailto:ericfeldman2@gmail.com"><img src="https://logodownload.org/wp-content/uploads/2018/03/gmail-logo.png" alt="Gmail Logo"></a>
+    </footer>  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
+    <script src="index.js"></script>
+
 </body>
 </html>
