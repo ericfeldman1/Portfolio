@@ -20,6 +20,10 @@ nav, footer {
 }
 
 nav {
+  visibility: hidden;
+}
+
+nav {
   height: 50px;
   line-height: 50px;
   position: fixed;
@@ -27,9 +31,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  /* background-color: #bbb; */
-  display: flex;
-  justify-content: space-around;
 }
 
 nav a {
@@ -48,9 +49,9 @@ header {
   background: linear-gradient(90deg, rgb(204, 238, 203) 0%, rgb(218, 240, 217) 12%, rgb(194, 236, 195) 100%); */
   /* background: rgb(251,251,251); */
   background: linear-gradient(90deg, rgb(238, 248, 238) 0%, rgb(218, 240, 217) 22%, rgb(175, 211, 176) 100%);
-  height: 500px;
-  margin: 100px 0px;
-  padding-top: 150px;
+  height: 300px;
+  padding-top: 75px;
+  margin-bottom: 75px;
 }
 
 h1 {
@@ -59,9 +60,10 @@ h1 {
   letter-spacing: 15px;
   /* font-family: 'Montserrat', sans-serif; */
   font-weight: 600;
-  font-size: 70px;
+  font-size: 15px;
   text-transform: uppercase;
-}
+  }
+
 
 hr {
   border: 0;
@@ -74,20 +76,12 @@ section {
   min-height: 200px;
   padding: 2% 0;
   background-color: white;
+  font-size: 16px;
 }
 
 .headline, .projects {
   /* background-color: rgb(207, 255, 201); */
   background:  rgb(218, 240, 217);
-}
-
-.projectPhotoAndInfo {
-  display: flex;
-  justify-content: center;
-}
-
-.projectPhoto, .projectInfo {
-  width: 50%;
 }
 
 .projectInfo {
@@ -116,7 +110,7 @@ section {
 }
 
 form {
-  width: 600px;
+  width: 300px;
   margin: auto;
   /* background-color: rgb(233, 233, 233); */
   text-align: left;
@@ -172,15 +166,82 @@ button {
 }
 
 footer {
-  display: flex;
-  justify-content: space-around;
+
   margin-top: 20px;
   padding: 10px;
-  position: absolute;
-  width: 99%;
-}
+  /* position: absolute;
+  width: 99%; */
+  display: flex;
+  justify-content: center;
+  }
+
+  footer .bigLogo {
+    visibility: collapse;
+    /* display: none; */
+  }
 
 footer img {
   height: 40px;
+}
 
+/* MEDIA QUERIES!! */
+@media screen and (min-width: 400px) {
+  
+  nav {
+  visibility: visible;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  }
+
+header {
+  margin: 100px 0px;
+  height: 500px;
+  padding-top: 150px;
+}
+
+section {
+  font-size: 20px;
+}
+
+  h1 {
+    font-size: 35px;
+  }
+
+  form {
+  width: 350px;
+  }
+}
+
+@media screen and (min-width: 675px) {
+
+h1 {
+    font-size: 70px;
+    }
+
+.projectPhotoAndInfo {
+  display: flex;
+  justify-content: space-around;
+  }
+
+.projectPhoto, .projectInfo {
+  width: 50%;
+  } 
+
+form {
+  width: 600px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+  footer .smallLogo {
+    visibility: collapse; 
+ }
+
+  footer .bigLogo {
+    visibility: visible;
+  }
 }
