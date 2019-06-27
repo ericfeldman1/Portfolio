@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width">
     <title>Eric's Portfolio Site - HTML Wireframe</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
 	 crossorigin="anonymous">
@@ -13,29 +12,28 @@
 
   <body>
     <nav role="navigation">
-      <!-- <ul class="menu"> -->
         <a href="#aboutMe">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#">Blog</a>
+        <a href="http://indevelopment.code.blog">Blog</a>
         <a href="#contact">Contact</a>
-      <!-- </ul>   -->
     </nav>
 
     <main>
 
         <header role="banner">
             <h1>Coder in Development</h1>
+            <h2 class="ericfeldman"><span class="letters">E</span>ric <span class="letters">F</span>eldman</h2>
         </header>
 
-        <section class="headline">
+        <!-- <section class="headline">
             <h2>Hi! I'm Eric, an aspiring fullstack developer from Baltimore, MD.</h2>
-        </section>
+        </section> -->
 
         <a name="aboutMe">
           <section class="aboutMe" id="aboutMe">
             <h3>About Me</h3>
             <hr>
-            <p>Hey, I'm Eric, and I'm currently studying web development through Bloc's Web Developer program.</p>
+            <p>Hi! I'm Eric, an aspiring fullstack developer from Baltimore, MD.  I'm currently studying web development through Bloc's <a href="https://www.bloc.io/web-developer-track" target="_blank">Web Developer program.</a></p>
             <p>I've always been excited about learning new things, and have been doing a lot of that in recent years.  Since training as a materials engineer in college, I've been spending my post-college days learning to crack the code of ancient Jewish texts in Jerusalem,  teaching science to high school drop-outs in Chicago, and estimating multi-million dollar construction projects in Baltimore.</p>
             <p>My newest venture is coding, and with it, I've finally found a niche that I feel confident that I can stay put with for a while.  I love waking up every day to continue growing my coding skills so that I can build newer and better things.  My natural instinct towards optimization serves me well in this field in which there are always ways to improve and grow.  I look forward to eventually being able to work on projects with a team, where collaboration will help me to grow even more and really take things to the next level.</p>
             <p>Aside from coding, I love to spend my time watching The Office with my amazing wife, jumping in puddles with my son, and biking. meditating, and doing yoga when I can find a spare moment.</p>
@@ -53,10 +51,10 @@
               </div>
               <div class="projectInfo">
                 <p class="projectTitle">Quiz App</p>
-                <p class="projectLanguages">HTML CSS Javascript JQuery</p>
-                <p class="projectDescription">10-Question Quiz App</p>
+                <img src="https://banner2.kisspng.com/20180406/uew/kisspng-cascading-style-sheets-javascript-html-css3-jquery-logo-5ac78cfa148694.1772279515230271940841.jpg" alt="HTML Logo">
+                <img src="http://www.global9.net/wp-content/uploads/2008/11/JQuery_logo.png" alt="HTML Logo">
+                <p class="projectDescription">This is an interactive & responsive 10-Question Quiz that provides user feedback as you move along.</p>
                 <p class="projectDate">June 2019</p>
-                <!-- <a href="https://github.com/ericfeldman1/Quiz-App" class="projectGithubLink">Github Repo</a> -->
                 <a href="https://github.com/ericfeldman1/Quiz-App" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Github Logo"></a>
                 
               </div>    
@@ -64,15 +62,17 @@
           </section>
         </a>
 
+<!-- Blog currently inactive - eventually link to it and put some of the most recent posts here -->
         <!-- <section class="blog">
           <h3>Blog</h3>
         </section> -->
 
-        <a name="contact">
           <section class="contact" id="contact">
-            <h3>Feel free to reach out!</h3>
+            <h3>Contact</h3>
             <hr>
-            <form class="contactForm" action="#" method="post">
+            <address>Feel free to reach out - <a href="mailto:ericfeldman2@gmail.com">Email me</a> today and I'll get back to you as soon as I can!</address>
+<!-- Eventually stick in a working form that sends a message to my email -->
+            <!-- <form class="contactForm" action="#" method="post">
             <fieldset name="contactForm">
               <div>
                 <label for="name">Name:</label>
@@ -91,22 +91,21 @@
               </div>  
             </fieldset>  
             </form>
-            <address>(You can also <a href="mailto:ericfeldman2@gmail.com">email me</a> the old fashioned way if you'd like)</address>  
+            <address>(You can also <a href="mailto:ericfeldman2@gmail.com">email me</a> the old fashioned way if you'd like)</address>   -->
           </section>
-        </a>
+        <!-- </a> -->
     </main>
     
     <footer role="content-info">
-      <a href="https://github.com/ericfeldman1" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="Github Logo" class="bigLogo"></a>  
-      <a href="https://github.com/ericfeldman1" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" class="smallLogo"></a>  
-      
-      <a href="https://www.linkedin.com/in/eric-feldman-172b5948/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/800px-LinkedIn_Logo.svg.png" alt="LinkedIn Logo" class="bigLogo"></a> 
-      <a href="https://www.linkedin.com/in/eric-feldman-172b5948/" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png" alt="LinkedIn Logo" class="smallLogo"></a> 
 
-      <address>
-      <a href="mailto:ericfeldman2@gmail.com"><img src="https://logodownload.org/wp-content/uploads/2018/03/gmail-logo.png" alt="Gmail Logo" class="bigLogo"></a>
-      <a href="mailto:ericfeldman2@gmail.com"><img src="https://image.flaticon.com/icons/svg/281/281769.svg" alt="Gmail Logo" class="smallLogo"></a>
-      </address>
+      <!-- Github @ Footer -->
+      <a href="https://github.com/ericfeldman1" target="_blank" class="githubLogo" alt="Github Logo"></a>  
+
+      <!-- Linkedin @ Footer -->
+      <a href="https://www.linkedin.com/in/eric-feldman-172b5948/" target="_blank" class="linkedinLogo" alt="Linkedin Logo"></a> 
+
+      <!-- Gmail @ Footer -->
+      <a href="mailto:ericfeldman2@gmail.com" class="gmailLogo" alt="Gmail Logo"></a>
 
     </footer>  
 

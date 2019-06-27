@@ -9,15 +9,11 @@ body {
   color: #444;
   text-align: center;
   line-height: 1.5;
-  min-width: 320px;
 }
 
 
 nav, footer {
-  /* background-color: rgb(124, 207, 114); */
-  /* background-color: rgb(207, 255, 201); */
   background:  rgb(218, 240, 217);
-
 }
 
 nav {
@@ -28,7 +24,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  /* list-style: none; */
   display: flex;
   justify-content: space-around;
 }
@@ -46,26 +41,33 @@ nav a:hover, button:hover {
 }
 
 header {
-  /* background: rgb(251,251,251);
-  background: linear-gradient(90deg, rgb(204, 238, 203) 0%, rgb(218, 240, 217) 12%, rgb(194, 236, 195) 100%); */
-  /* background: rgb(251,251,251); */
   background: linear-gradient(90deg, rgb(238, 248, 238) 0%, rgb(218, 240, 217) 22%, rgb(175, 211, 176) 100%);
   height: 300px;
   /* width: 100%; */
   padding-top: 75px;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
+  min-width: 360px;
 }
 
 h1 {
-  /* color: white; */
   word-spacing: 30px;
   letter-spacing: 15px;
-  /* font-family: 'Montserrat', sans-serif; */
   font-weight: 600;
   font-size: 15px;
   text-transform: uppercase;
   }
 
+.ericfeldman {
+    letter-spacing: 10px;
+    color: rgb(90, 107, 91);
+    font-size: 15px;
+    padding-top: 75px;
+    text-transform: uppercase;
+}
+
+.letters {
+  color: rgb(60, 71, 60);
+}
 
 hr {
   border: 0;
@@ -80,10 +82,18 @@ section {
   background-color: white;
   font-size: 16px;
   width: 100%;
+  min-width: 360px;
+}
+
+p a {
+  color: black;
+}
+
+address a {
+  color: black;
 }
 
 .headline, .projects {
-  /* background-color: rgb(207, 255, 201); */
   background:  rgb(218, 240, 217);
 }
 
@@ -115,7 +125,6 @@ section {
 form {
   width: 300px;
   margin: auto;
-  /* background-color: rgb(233, 233, 233); */
   text-align: left;
 }
 
@@ -124,7 +133,6 @@ fieldset {
 }
 
 label {
-/* Not sure why this isn't working */
 text-align: left;
 margin-right: 60px;
 font-weight: 600;
@@ -146,7 +154,6 @@ input {
 }
 
 textarea {
- /* https://www.sitepoint.com/position-text-labels-on-forms-using-css/ */
   height: 300px;
   margin: auto;
 }
@@ -169,22 +176,38 @@ button {
 }
 
 footer {
-
   margin-top: 20px;
+  margin-bottom: 0px;
   padding: 10px;
-  /* position: absolute;
-  width: 99%; */
+  position: absolute;
+  width: 99%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  height: 60px;
   }
 
-  footer .bigLogo {
-    visibility: collapse;
-    /* display: none; */
+footer .githubLogo {
+  background-image: url("http://pngimg.com/uploads/github/github_PNG71.png");
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+  background-repeat: no-repeat;
   }
 
-footer img {
-  height: 40px;
+footer .linkedinLogo {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png");
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+  background-repeat: no-repeat;
+}
+
+footer .gmailLogo {
+  background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-512.png");
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+  background-repeat: no-repeat;
 }
 
 /* MEDIA QUERIES!! */
@@ -195,7 +218,8 @@ nav a {
 }
 
 header {
-  margin: 100px 0px;
+  margin-top: 50px; 
+  margin-bottom: 25px;
   height: 500px;
   padding-top: 150px;
   }
@@ -208,6 +232,11 @@ h1 {
   font-size: 35px;
   }
 
+.ericfeldman {
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+
 form {
   width: 350px;
   }
@@ -219,9 +248,18 @@ nav a {
   font-size: 22px;
 }
 
+header {
+  height: 600px;
+}
+
 h1 {
   font-size: 70px;
   }
+
+.ericfeldman {
+    letter-spacing: 10px;
+    font-size: 60px;
+}
 
 section { 
   font-size: 20px;
@@ -240,16 +278,28 @@ form {
   width: 600px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
+footer .githubLogo {
+  background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  }
+
+footer .linkedinLogo {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/800px-LinkedIn_Logo.svg.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-repeat: no-repeat;
 }
 
-footer .smallLogo {
-  visibility: collapse; 
- }
+footer .gmailLogo {
+  background-image: url("http://pngimg.com/uploads/gmail_logo/gmail_logo_PNG13.png");
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
 
-footer .bigLogo {
-  visibility: visible;
-  }
 }
