@@ -175,39 +175,48 @@ button {
   border-radius: 10px;
 }
 
+.contact img {
+  height: 40%;
+  width: 40%;
+}
+
 footer {
   margin-top: 20px;
   margin-bottom: 0px;
-  padding: 10px;
+  padding-top: 10px;
   position: absolute;
   width: 99%;
   display: flex;
   justify-content: space-around;
-  height: 60px;
+  height: 120px;
   }
 
 footer .githubLogo {
   background-image: url("http://pngimg.com/uploads/github/github_PNG71.png");
-  width: 60px;
-  height: 60px;
-  background-size: 60px;
+  width: 80px;
+  height: 100px;
+  background-size: 80px;
   background-repeat: no-repeat;
   }
 
 footer .linkedinLogo {
   background-image: url("https://cdn2.iconfinder.com/data/icons/popular-social-media-flat/48/Popular_Social_Media-22-512.png");
-  width: 60px;
-  height: 60px;
-  background-size: 60px;
+  width: 80px;
+  height: 100px;
+  background-size: 80px;
   background-repeat: no-repeat;
 }
 
 footer .gmailLogo {
   background-image: url("https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_gmail-512.png");
-  width: 60px;
-  height: 60px;
-  background-size: 60px;
+  width: 80px;
+  height: 100px;
+  background-size: 80px;
   background-repeat: no-repeat;
+}
+
+.footerText {
+  display: none;
 }
 
 /* MEDIA QUERIES!! */
@@ -280,25 +289,25 @@ form {
 
 footer .githubLogo {
   background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png");
-  width: 100px;
+  width: 150px;
   height: 100px;
-  background-size: 100px;
+  background-size: 150px;
   background-repeat: no-repeat;
   }
 
 footer .linkedinLogo {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/800px-LinkedIn_Logo.svg.png");
-  width: 100px;
+  width: 150px;
   height: 100px;
-  background-size: 100px;
+  background-size: 150px;
   background-repeat: no-repeat;
 }
 
 footer .gmailLogo {
   background-image: url("http://pngimg.com/uploads/gmail_logo/gmail_logo_PNG13.png");
-  width: 100px;
+  width: 150px;
   height: 100px;
-  background-size: 100px;
+  background-size: 150px;
   background-repeat: no-repeat;
 }
 
